@@ -1,0 +1,10 @@
+<h1>Add chat room</h1>
+
+<%= form_tag "/create" do %>
+  <div class="form-group">
+    <%= label_tag :title %>
+    <%= text_field_tag :title %>
+  </div>
+
+  <%= submit_tag "Add!", class: 'btn btn-primary' %>
+<% end %>

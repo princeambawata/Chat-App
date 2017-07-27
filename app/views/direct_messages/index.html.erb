@@ -1,0 +1,10 @@
+<!-- <h1>Chat rooms</h1>
+
+<p class="lead"><%= link_to 'New chat room', new_chatroom_path, class: 'btn btn-primary' %></p>
+ -->
+<h1><%=current_user.email.split('@')[0]%></h1>
+<br>
+
+<ul>
+  <%= render 'chat_room'%>
+</ul>

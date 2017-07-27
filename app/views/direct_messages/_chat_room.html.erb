@@ -1,0 +1,7 @@
+
+<h5>Users</h5>
+   <ul>
+   <% (User.all - [current_user]).each do |user| %>
+     <li><%= link_to user.email.split('@')[0], url_for(controller: :direct_messages,action: :show,id: user.id),method: :get,data: {turbolinks: false} %></li>
+   <% end %>
+   </ul>

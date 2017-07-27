@@ -1,0 +1,8 @@
+
+
+<h5>Users</h5>
+   <ul>
+   <% (User.all - [current_user]).each do |user| %>
+     <li><%= link_to user.email.split('@')[0], direct_message_path(user.id), data: {behavior: "chatroom-link", chatroom_id: Chatroom.direct_message_for_users([current_user, user]).id } %></li>
+   <% end %>
+   </ul>
