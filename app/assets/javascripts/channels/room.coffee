@@ -15,7 +15,7 @@
       active_chatroom.append(data['message'])
       messages_to_bottom = -> $('#messages').scrollTop($('#messages').prop("scrollHeight"))
       messages_to_bottom()
-      
+
     speak:(message, chatroom_id) ->
      @perform 'speak', message: message,chatroom_id: chatroom_id
 
@@ -25,7 +25,8 @@
       textarea = $this.find('#body')
       if $.trim(textarea.val()).length > 1
         App.global_chat.speak textarea.val(), $('#messages').data('chat-room-id')
-        content = $('div.emoji-wysiwyg-editor.form-control')
-        console.log(content)
+        textarea.val('')
+        ele = $('.emoji-wysiwyg-editor.form-control')[0]
+        ele.innerHTML = ""
       e.preventDefault()
       return false

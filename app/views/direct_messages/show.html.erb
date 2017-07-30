@@ -10,7 +10,8 @@
 
 <%= form_tag '/message' , :id => 'new_message' do %>
     <p class="emoji-picker-container">
-    <%= text_area_tag :body,"", class: 'form-control', data: { emojiable: true }%><br>
+    <%= text_area_tag :body,"", class: 'form-control', data: { emojiable: true }%>
     </p>
-    <%= submit_tag "send"%>
+    <br>
+    <%= submit_tag "send", id: "send-message"%>
   <% end %>
