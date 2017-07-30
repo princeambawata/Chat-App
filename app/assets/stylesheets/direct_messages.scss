@@ -41,17 +41,14 @@ div#messages:after{
   div.emoji-wysiwyg-editor.form-control{
   border-radius:17px;
   min-height: 60px;
-  margin-left:6px;
+  margin-left:39px;
   margin-right:5px;
-  margin-top:6px;
+  margin-top:8px;
   }
   .emoji-picker-container{
-  width:99%;
+  width:96%;
   margin-right:5px;
-  }
-  i.emoji-picker-icon{
-    top:25px;
-    right:10px;
+  margin-bottom:5px;
   }
   input#send-message{
   color:white;
@@ -63,3 +60,13 @@ div#messages:after{
   height:60px;
   border-radius:20px;
   }
+  div#outer{
+  margin:6px 6px 6px 6px;  
+  border: 1px solid #296762;
+  border-radius:20px;
+  }
+  div.emoji-items-wrap1{
+  background-color:#561313;
+  }
+
+ 

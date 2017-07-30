@@ -9,9 +9,10 @@
 </div>
 
 <%= form_tag '/message' , :id => 'new_message' do %>
+   <div id="outer">
     <p class="emoji-picker-container">
     <%= text_area_tag :body,"", class: 'form-control', data: { emojiable: true }%>
     </p>
-    <br>
+    </div>
     <%= submit_tag "send", id: "send-message"%>
   <% end %>

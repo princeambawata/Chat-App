@@ -16,5 +16,8 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'rails_emoji_picker'
+@import 'rails_emoji_picker';
 
+body{
+  font-size:22px;
+  }
